@@ -21,3 +21,14 @@ Product names : [list of 3 product names
 4) Stop hallcuniation -- " If you dont know an answer simply respond with "I dont know".
 
 #----------------OpenAI Platform------------
+1. Text Generation: Use client.responses.create() with input parameter and control output with temperature and top_p
+2. Structured Outputs: Define JSON schemas or use Pydantic models with text.format to get typed, validated responses
+3. Image Generation: Use the image_generation tool in the Responses API to generate images with options for quality, size, and transparent backgrounds
+
+4. Multimodal: Vision (image analysis), text-to-speech, and speech-to-text capabilities are all available through the API
+5. Function Calling: Define tools with JSON schemas and handle tool calls in an agentic loop
+6. Reasoning Models: Use effort and verbosity to control the level of reasoning and output verbosity
+
+7. Embeddings: Generate vector representations of text for semantic search and similarity comparisons
+8. Video Generation: Use the Sora API (client.videos.create()) for async text-to-video generation with progress polling
+9. Deep Research: Use o3-deep-research or o4-mini-deep-research with background=True for comprehensive, multi-source research reports
