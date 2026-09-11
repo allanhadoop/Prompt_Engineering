@@ -1,4 +1,7 @@
 # Prompt engineering
+() - Run/call
+[] - Get an item
+.  - Get an attribute/property
 
 1. Give direction, Specify format, Provide examples, Evaluate quality(Run multiple times), Divide labor (multiple supporting prompts) 
 2) Template - 
