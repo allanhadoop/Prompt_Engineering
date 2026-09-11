@@ -32,3 +32,16 @@ Product names : [list of 3 product names
 7. Embeddings: Generate vector representations of text for semantic search and similarity comparisons
 8. Video Generation: Use the Sora API (client.videos.create()) for async text-to-video generation with progress polling
 9. Deep Research: Use o3-deep-research or o4-mini-deep-research with background=True for comprehensive, multi-source research reports
+
+#--------------Token count scenarios - 
+1. Approaching context limits - Models have fixed context windows (e.g., 128K for GPT-4o). Exceeding causes truncation or errors.
+(Count tokens before sending; truncate or summarize if needed)
+
+2. Optimizing costs - API pricing is per-token. Long prompts = higher costs. (Remove redundant text, use concise instructions)
+3. Comparing prompt strategies - Different prompts may achieve similar results with fewer tokens (A/B test prompts and measure token efficiency)
+4. Batch processing - Processing thousands of requests amplifies small inefficiencies (Optimize prompts before scaling)
+5. RAG applications - Retrieved context adds tokens quickly (Set retrieval limits based on token budget)
+
+Rule of thumb: If your prompt + expected response approaches 50% of the context window, start actively managing tokens.
+
+#--------------------
