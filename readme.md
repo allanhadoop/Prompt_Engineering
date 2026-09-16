@@ -1,8 +1,42 @@
-# Prompt engineering
-() - Run/call
-[] - Get an item
+# -----------------Quick recap-----------------------
+[] - Get an item - List 
+{} - Dictionary - Key value pair
 .  - Get an attribute/property
+[{...} {....}] - Means multiple dictionaries within the list
+ 
+| Python concept | Simple meaning               | Example                   |
+| -------------- | ---------------------------- | ------------------------- |
+| **Function**   | Does a job                   | `get_weather()`           |
+| **Class**      | Blueprint                    | `class Car:`              |
+| **Object**     | Actual thing made from class | `car1 = Car()`            |
+| **Method**     | Function inside a class      | `car1.drive()`            |
+| **List**       | Container                    | `[tool1, tool2]`          |
+| **Dictionary** | Key-value information        | `{"name": "get_weather"}` |
 
+1) 
+* = multiple positional arguments - E.g. below
+def add_numbers(*numbers):
+    print(numbers)
+
+add_numbers(10, 20, 30)             <---------------multiple
+
+2) 
+** = multiple keyword arguments
+def person(**details):              <----------or def create(**kwargs): ---------->
+    print(details)
+
+person(name="Anand", age=40, city="Pune")
+Python collects them into a dictionary:
+details = {
+    "name": "Anand",
+    "age": 40,
+    "city": "Pune"
+}
+
+3) 
+def test(*args, **kwargs):
+  print(test)
+----------------------------------------
 1. Give direction, Specify format, Provide examples, Evaluate quality(Run multiple times), Divide labor (multiple supporting prompts) 
 2) Template - 
 Brainstrom a list of product names for a {product description}, in the style of {famous inventor}
