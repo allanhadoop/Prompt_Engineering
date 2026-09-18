@@ -61,3 +61,17 @@
 | Decorator       | Modifies a function                | `@decorator`                |
 | Context manager | Automatically manages resources    | `with open(...)`            |
 | Async           | Work without blocking              | `async def` / `await`       |
+
+---------------------------------------------------------------------------------------
+| Syntax                       | Simple meaning                     | When you'll see it    |
+| ---------------------------- | ---------------------------------- | --------------------- |
+| `__init__()`                 | Set up a new object                | Classes               |
+| `self`                       | This particular object             | Classes               |
+| `__name__`                   | Name of current Python module      | Programs/modules      |
+| `__main__`                   | Current file is being run directly | Bottom of programs    |
+| `if __name__ == "__main__":` | Run only when directly executed    | Reusable Python files |
+| `__str__()`                  | How object appears when printed    | Classes               |
+| `__len__()`                  | What `len(object)` should return   | Custom classes        |
+| `__getitem__()`              | Make `object[index]` work          | Custom classes        |
+| `__call__()`                 | Make `object()` work               | Advanced classes      |
+| `__repr__()`                 | Developer-friendly representation  | Classes/debugging     |
