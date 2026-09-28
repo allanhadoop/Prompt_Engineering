@@ -22,3 +22,6 @@ groq = OpenAI(
     base_url=groq_url,
     api_key=groq_api_key 
 )
+
+#------------OpenAI---------------------
+openai_api_key = os.getenv("openai_api_key") 
